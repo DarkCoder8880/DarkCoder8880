@@ -1,0 +1,55 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id="a~ZJrq1Z~I;38+z].s!i" x="274" y="85">
+    <value name="TOKEN">
+      <block type="text" id=")dPEg6,k3D$g4b*K(j*Z">
+        <field name="TEXT">OTM5NzM0ODQ0MzUzNjc5Mzgy.Yf9KRg.wzUQvAeHHAJ9HHgScNAsMk6sMWQ</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="+JZ[z4+7vZ-()BSC-+T~" x="277" y="158">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id=",$ZCwpJoef[.I%AC)/6]">
+        <value name="IF0">
+          <block type="logic_compare" id="wY~EQ~OWO.DNvCjQ+95.">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id=")C01=[.;JV!wQ,K0C=,."></block>
+            </value>
+            <value name="B">
+              <block type="text" id="JAZ3]n2Tyc!Dj}@*?7]i">
+                <field name="TEXT">!InfoOwner</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_create_embed_then" id="ZjO=ADRo#5EuZJ7zs.)t">
+            <statement name="THEN">
+              <block type="s4d_create_embed_then_set_color" id="P]~9%UjZ{VcqVhbP,LLw">
+                <value name="COLOR">
+                  <block type="colour_picker" id="y/!2P:S(^n6X1|;Cq:DG">
+                    <field name="COLOUR">#ffcc00</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="s4d_create_embed_then_add_field" id="Hgm+2[^ocs)HumP0hlrq">
+                    <value name="TITLE">
+                      <block type="text" id="ys_I?%2=.UD,r:!.^{i[">
+                        <field name="TEXT">Info</field>
+                      </block>
+                    </value>
+                    <value name="DESCRIPTION">
+                      <block type="text" id="eqTKo0mYK14S=TiX^tCa">
+                        <field name="TEXT">Owner has Created this bot, If you want to ping him you will have to have a good reason or mute </field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
